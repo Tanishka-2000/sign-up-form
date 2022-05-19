@@ -38,8 +38,11 @@ input{
     font-size: 2rem;
     border: none;
     outline: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #333;
     margin-bottom: 40px;
+}
+input:focus{
+    border-bottom: 2px solid #000;
 }
 input:focus + label,
 input:not(:placeholder-shown) + label{
@@ -67,4 +70,13 @@ form button{
 }
 form button:hover{
     background-color: #111;
+}
+form div:last-of-type input{
+    margin-bottom: 5px;
+}
+.error_message{
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: red;
+    display: none;
 }
