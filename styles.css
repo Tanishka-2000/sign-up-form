@@ -18,8 +18,7 @@ body{
 }
 form{
     width: 25vw;
-    padding: 0 5vh;
-    /* border: 1px solid black; */
+    padding: 5vh;
     position: relative;
 }
 h1{
@@ -31,24 +30,30 @@ p{
     color: #222;
     font-size: 1.6rem;
 }
+form > div{
+    position: relative;
+}
 input{
     background-color: transparent;
     font-size: 2rem;
     border: none;
     outline: none;
     border-bottom: 1px solid black;
+    margin-bottom: 40px;
+}
+input:focus + label,
+input:not(:placeholder-shown) + label{
+    visibility: hidden;
 }
 label{
-    color: #333;
-    position: relative;
-    bottom: -35px;
-    left: -50px;
+position: absolute;
+top: 0px;
+color: #333;
 }
 form span{
-    color: #333;
-    position: relative;
-    bottom: -45px;
-    left: -60px;
+position:absolute;
+left: -50px;
+color: #333;
 }
 form button{
     width: 10vw;

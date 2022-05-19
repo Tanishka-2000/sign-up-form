@@ -11,6 +11,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Roboto&display=swap" rel="stylesheet">
         <!-- stylesheet -->
         <link rel="stylesheet" href="styles.css">
+        <!-- script -->
+        <script src="script.js" defer ></script>
     </head>
     <body>
         <div class="container">
@@ -18,25 +20,35 @@
             <p>Please fill in this form to create account</p>
 
             <form action="index.html" method="post">
-                <span class="material-symbols-outlined">person</span>
-                <label for="name">Fullname</label>
-                <input type="text" name="name" id="name">
+                <div class="">
+                    <span class="material-symbols-outlined">person</span>
+                    <input type="text" name="name" id="name" placeholder=" ">
+                    <label for="name">Fullname</label>
+                </div>
 
-                <span class="material-symbols-outlined">mail</span>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <div>
+                    <span class="material-symbols-outlined">mail</span>
+                    <input type="email" name="email" id="email" placeholder=" ">
+                    <label for="email">Email</label>
+                </div>
 
-                <span class="material-symbols-outlined">smartphone</span>
-                <label for="phone">Phone Number</label>
-                <input type="text" name="name" id="name">
+                <div>
+                    <span class="material-symbols-outlined">smartphone</span>
+                    <input type="tel" name="phone" id="phone" placeholder=" ">
+                    <label for="phone">Phone Number</label>
+                </div>
 
-                <span class="material-symbols-outlined">lock</span>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
+                <div>
+                    <span class="material-symbols-outlined">lock</span>
+                    <input type="password" name="password" id="password" placeholder=" ">
+                    <label for="password">Password</label>
+                </div>
 
-                <span class="material-symbols-outlined">lock_open</span>
-                <label for="confirmPassword">Confirm Password</label>
-                <input type="password" name="confirmPassword" id="confirmPassword">
+                <div>
+                    <span class="material-symbols-outlined">lock_open</span>
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder=" ">
+                    <label for="confirmPassword">Confirm Password</label>
+                </div>
 
                 <button type="submit" name="button">Sign Up</button>
             </form>
