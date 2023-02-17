@@ -30,6 +30,7 @@ p{
     color: #222;
     font-size: 1.6rem;
 }
+/* positioned div to relative place labels and icons */
 form > div{
     position: relative;
 }
@@ -44,15 +45,18 @@ input{
 input:focus{
     border-bottom: 2px solid #000;
 }
+/* hide the label on focus or on non-empty input fields */
 input:focus + label,
 input:not(:placeholder-shown) + label{
     visibility: hidden;
 }
+/* position label as palceholder */
 label{
 position: absolute;
 top: 0px;
 color: #333;
 }
+/* positioned icons */
 form span{
 position:absolute;
 left: -50px;
@@ -71,9 +75,11 @@ form button{
 form button:hover{
     background-color: #111;
 }
+/* positioned error message */
 form div:last-of-type input{
     margin-bottom: 5px;
 }
+/* error message paragraph */
 .error_message{
     margin-top: 10px;
     font-size: 1.1rem;
